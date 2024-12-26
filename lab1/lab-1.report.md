@@ -78,26 +78,25 @@ spec:
 
 ```bash
 kubectl apply -f /Users/svslyusarenko/2024_2025-introduction_to_distributed_technologies-k4112c-slusarenko_s_v/lab1/vault-deployment.yaml
-pod/vault created
 ```
 
 статус пода
 
 ```bash
->kubectl get pods
+❯ svslyusarenko@MSK-KGG7VJKN73 lab1 % kubectl get pods
 
-NAME    READY   STATUS    RESTARTS   AGE
-vault   1/1     Running   0          2m47s
+NAME    READY   STATUS              RESTARTS   AGE
+vault   0/1     ContainerCreating   0          39s
 ```
 
 статус сервисов
 
 ```bash
-❯ kubectl get services
+❯ svslyusarenko@MSK-KGG7VJKN73 lab1 % kubectl get services 
 
 NAME            TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
-kubernetes      ClusterIP   10.96.0.1        <none>        443/TCP          13m
-vault-service   NodePort    10.108.220.218   <none>        8200:32448/TCP   4m30s
+kubernetes      ClusterIP   10.96.0.1        <none>        443/TCP          4m34s
+vault-service   NodePort    10.100.138.222   <none>        8200:32508/TCP   2m15s
 ```
 
 получем url для доступа к vault 
@@ -105,7 +104,7 @@ vault-service   NodePort    10.108.220.218   <none>        8200:32448/TCP   4m30
 ```bash
 ❯ minikube service vault-service --url
 
-http://127.0.0.1:55982
+http://127.0.0.1:50353
 ```
 
 как результат получаем ui волта
@@ -122,6 +121,9 @@ http://127.0.0.1:55982
 
 ```bash
  >kubectl logs vault
+
+Unseal Key: zNJs21uEh1qJYIFRghBebWShyBnpnPZJGpKBMC1h3zw=
+Root Token: hvs.s7lHlsS9n2QuCGeiHK4Ec6sG
 ```
 
 Там можем увидеть наш токен, по которому и зайдем в сервис
