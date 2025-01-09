@@ -214,3 +214,4 @@ NAME                    READY   STATUS    RESTARTS   AGE   IP               NODE
 lab4-replicaset-4knf9   1/1     Running   0          17m   10.244.120.69    minikube       <none>           <none>
 lab4-replicaset-pn564   1/1     Running   0          17m   10.244.205.195   minikube-m02   <none>           <none>
 ```
+![alt text](ping.png)
