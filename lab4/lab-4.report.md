@@ -66,8 +66,6 @@ Calico — это популярный плагин с открытым исхо
 minikube start --cni=calico
 ```
 
-![alt text](image.png)
-
 ```sh
 minikube node add
 ```
