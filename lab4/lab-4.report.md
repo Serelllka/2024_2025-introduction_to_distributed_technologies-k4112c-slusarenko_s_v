@@ -171,11 +171,11 @@ spec:
 эти конфигурации позволяют распределять IP-адреса из разных диапазонов в зависимости от зоны, к которой принадлежит узел
 
 ```bash
-❯ kubectl apply -f /Users/iskander-faggod/Desktop/2024_2025-introduction_to_distributed_technologies-k4112c-kudashev_i_e/lab4/ru-north-pool.yaml
+❯ kubectl apply -f ru-north-pool.yaml
 
 ippool.crd.projectcalico.org/north-zone-ippool created
 
-❯ kubectl apply -f /Users/iskander-faggod/Desktop/2024_2025-introduction_to_distributed_technologies-k4112c-kudashev_i_e/lab4/ru-south-pool.yaml
+❯ kubectl apply -f ru-south-pool.yaml
 
 
 ippool.crd.projectcalico.org/south-zone-ippool created
