@@ -91,3 +91,6 @@ kubectl apply -f ./replicaSet.yaml
 
 kubectl apply -f ./ingress.yaml
 ```
+
+Проверяем сертификат
+![alt text](sert.png)
