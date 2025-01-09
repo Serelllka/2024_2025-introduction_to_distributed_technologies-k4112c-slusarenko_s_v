@@ -194,9 +194,9 @@ south-zone-ippool     26s
 исполняем run script
 
 ```bash
-❯ chmod +x /Users/iskander-faggod/Desktop/2024_2025-introduction_to_distributed_technologies-k4112c-kudashev_i_e/lab4/run.sh
+❯ chmod +x run.sh
 
-❯ /Users/iskander-faggod/Desktop/2024_2025-introduction_to_distributed_technologies-k4112c-kudashev_i_e/lab4/run.sh
+❯ run.sh
 ```
 
 приложение развернуто с использованием ReplicaSet с двумя репликами
